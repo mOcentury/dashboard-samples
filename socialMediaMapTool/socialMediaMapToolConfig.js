@@ -26,7 +26,7 @@ define([
   "dojo/number"
 ], function (declare, lang, _WidgetBase, _TemplatedMixin, MapToolConfigurationProxy, templateString, TextBox, NumberTextBox, Select, number) {
 
-  return declare("SocialMediaMapToolConfig", [_WidgetBase, _TemplatedMixin, MapToolConfigurationProxy], {
+  return declare("socialMediaMapToolConfig", [_WidgetBase, _TemplatedMixin, MapToolConfigurationProxy], {
     templateString: templateString,
 
     hostReady: function () {
