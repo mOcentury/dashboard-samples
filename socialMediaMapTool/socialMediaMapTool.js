@@ -74,7 +74,7 @@ define([
       // ****************************************************************
       this.query = {
         method: "flickr.photos.search",
-        api_key: "yourDeveloperKey",
+        api_key: "dc2cb582f2562b4e0e99f2f372210a4c",
         extras: "geo,description,date_taken,geo,url_s",
         text: "",
         content_type: 7,
