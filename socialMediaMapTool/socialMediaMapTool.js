@@ -33,7 +33,7 @@ define([
   "esri/geometry/Point",
   "esri/geometry/Circle",
   "esri/units",
-  "dojo/text!./SocialMediaMapToolTemplate.html"
+  "dojo/text!./socialMediaMapToolTemplate.html"
 ], function (declare, lang, ioQuery, domClass, all, _WidgetBase, _TemplatedMixin, esriConfig, esriRequest, MapToolProxy, Color, SimpleLineSymbol, SimpleFillSymbol, PictureMarkerSymbol, Graphic, Extent, webMercatorUtils, Point, Circle, Units, templateString) {
 
   return declare("SocialMediaMapTool", [_WidgetBase, _TemplatedMixin, MapToolProxy], {
@@ -67,9 +67,9 @@ define([
       // Set up the query for the photo search request
       this.flickrDomain = "api.flickr.com";
       esriConfig.defaults.io.corsEnabledServers.push(this.flickrDomain);
-    
+
       // ***************************************************************
-      // NOTE: To run this sample, you must sign up for and enter here 
+      // NOTE: To run this sample, you must sign up for and enter here
       // your Flickr API key.
       // ****************************************************************
       this.query = {
@@ -113,10 +113,10 @@ define([
         height: 40
       });
 
-      // Creates the graphics layers (the one created last will be drawn on top) 
+      // Creates the graphics layers (the one created last will be drawn on top)
       all({
-        bufferGraphicsLayerProxy: this.mapWidgetProxy.createGraphicsLayerProxy(), 
-        pushPinGraphicsLayerProxy: this.mapWidgetProxy.createGraphicsLayerProxy(), 
+        bufferGraphicsLayerProxy: this.mapWidgetProxy.createGraphicsLayerProxy(),
+        pushPinGraphicsLayerProxy: this.mapWidgetProxy.createGraphicsLayerProxy(),
         mediaFeedsGraphicsLayerProxy: this.mapWidgetProxy.createGraphicsLayerProxy(),
         selectedPhotoGraphicsLayerProxy: this.mapWidgetProxy.createGraphicsLayerProxy()
       }).then(function(results){
