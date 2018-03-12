@@ -38,7 +38,7 @@ define([
     constructor: function () {
       this.inherited(arguments);
 
-      this.developerKey = "yourDeveloperKey"; // ENTER YOUR WEATHER UNDERGROUND DEVELOPER API KEY HERE
+      this.developerKey = "9777acfe4179474f"; // ENTER YOUR WEATHER UNDERGROUND DEVELOPER API KEY HERE
 
       this.wundergroundDomain = "api.wunderground.com";
       esriConfig.defaults.io.corsEnabledServers.push(this.wundergroundDomain);
